@@ -1,0 +1,617 @@
+--Made By Beardy13201#362
+--Version 1 Beta
+ 
+-- Instances:
+ 
+local Beardy13201 = Instance.new("ScreenGui")
+local LoginFrame = Instance.new("Frame")
+local TitleFrame = Instance.new("Frame")
+local TitleText = Instance.new("TextLabel")
+local SubmitButton = Instance.new("TextButton")
+local UsernameText = Instance.new("TextBox")
+local PasswordText = Instance.new("TextBox")
+local OpenButton = Instance.new("TextButton")
+local HacksFrame = Instance.new("Frame")
+local HacksTitle = Instance.new("TextLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Arsenal = Instance.new("TextButton")
+local Admins = Instance.new("TextButton")
+local FE = Instance.new("TextButton")
+local Others = Instance.new("TextButton")
+local Jailbreak = Instance.new("TextButton")
+local Others_2 = Instance.new("TextButton")
+local LOGOT = Instance.new("TextButton")
+local LOGOL = Instance.new("TextLabel")
+local LOGOB = Instance.new("TextLabel")
+local ActualHacks = Instance.new("Frame")
+local AimbotButton = Instance.new("TextButton")
+local KillAllButton = Instance.new("TextButton")
+local RevizAdminButton = Instance.new("TextButton")
+local InfiniteYieldButton = Instance.new("TextButton")
+local MoonhubButton = Instance.new("TextButton")
+local OPHUBbutton = Instance.new("TextButton")
+local AutoRobButton = Instance.new("TextButton")
+local jailGUIButton = Instance.new("TextButton")
+local RagdollGUIButton = Instance.new("TextButton")
+local MM2GUIbutton = Instance.new("TextButton")
+local DoomspireBrickButton = Instance.new("TextButton")
+local TecnhoExploitsButton = Instance.new("TextButton")
+local FrixonHubButoon = Instance.new("TextButton")
+ 
+--Properties:
+ 
+Beardy13201.Name = "Beardy13201"
+Beardy13201.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ 
+LoginFrame.Name = "LoginFrame"
+LoginFrame.Parent = Beardy13201
+LoginFrame.BackgroundColor3 = Color3.fromRGB(39, 36, 37)
+LoginFrame.BorderColor3 = Color3.fromRGB(39, 36, 37)
+LoginFrame.Position = UDim2.new(0.368464738, 0, 0.303278655, 0)
+LoginFrame.Size = UDim2.new(0, 335, 0, 375)
+ 
+TitleFrame.Name = "TitleFrame"
+TitleFrame.Parent = LoginFrame
+TitleFrame.BackgroundColor3 = Color3.fromRGB(39, 36, 37)
+TitleFrame.BorderColor3 = Color3.fromRGB(39, 36, 37)
+TitleFrame.Size = UDim2.new(0, 335, 0, 58)
+TitleFrame.Draggable = true
+ 
+TitleText.Name = "TitleText"
+TitleText.Parent = TitleFrame
+TitleText.BackgroundColor3 = Color3.fromRGB(39, 36, 37)
+TitleText.BorderColor3 = Color3.fromRGB(29, 26, 27)
+TitleText.Size = UDim2.new(0, 335, 0, 58)
+TitleText.Font = Enum.Font.SciFi
+TitleText.Text = "Login"
+TitleText.TextColor3 = Color3.fromRGB(0, 0, 0)
+TitleText.TextScaled = true
+TitleText.TextSize = 14.000
+TitleText.TextWrapped = true
+ 
+SubmitButton.Name = "SubmitButton"
+SubmitButton.Parent = LoginFrame
+SubmitButton.BackgroundColor3 = Color3.fromRGB(58, 53, 55)
+SubmitButton.BorderColor3 = Color3.fromRGB(39, 36, 37)
+SubmitButton.Position = UDim2.new(0.200000003, 0, 0.79733336, 0)
+SubmitButton.Size = UDim2.new(0, 200, 0, 50)
+SubmitButton.Font = Enum.Font.SciFi
+SubmitButton.Text = "Submit"
+SubmitButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+SubmitButton.TextScaled = true
+SubmitButton.TextSize = 14.000
+SubmitButton.TextWrapped = true
+SubmitButton.MouseButton1Click:connect(function()
+    if UsernameText.text == "Beardy13201" and PasswordText.Text == "Dec2020" then
+        LoginFrame.Visible = false
+        OpenButton.Visible = true
+    end
+    end)
+ 
+UsernameText.Name = "UsernameText"
+UsernameText.Parent = LoginFrame
+UsernameText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UsernameText.Position = UDim2.new(0.101492539, 0, 0.280000001, 0)
+UsernameText.Size = UDim2.new(0, 266, 0, 50)
+UsernameText.Font = Enum.Font.SourceSans
+UsernameText.Text = "Username"
+UsernameText.TextColor3 = Color3.fromRGB(0, 0, 0)
+UsernameText.TextScaled = true
+UsernameText.TextSize = 14.000
+UsernameText.TextWrapped = true
+ 
+PasswordText.Name = "PasswordText"
+PasswordText.Parent = LoginFrame
+PasswordText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PasswordText.Position = UDim2.new(0.101492539, 0, 0.509333313, 0)
+PasswordText.Size = UDim2.new(0, 266, 0, 50)
+PasswordText.Font = Enum.Font.SourceSans
+PasswordText.Text = "Password"
+PasswordText.TextColor3 = Color3.fromRGB(0, 0, 0)
+PasswordText.TextScaled = true
+PasswordText.TextSize = 14.000
+PasswordText.TextWrapped = true
+ 
+OpenButton.Name = "OpenButton"
+OpenButton.Parent = Beardy13201
+OpenButton.BackgroundColor3 = Color3.fromRGB(39, 36, 37)
+OpenButton.BorderColor3 = Color3.fromRGB(0, 89, 255)
+OpenButton.Position = UDim2.new(0, 0, 0.46955502, 0)
+OpenButton.Size = UDim2.new(0, 124, 0, 63)
+OpenButton.Font = Enum.Font.SciFi
+OpenButton.Text = "Open"
+OpenButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+OpenButton.TextScaled = true
+OpenButton.TextSize = 14.000
+OpenButton.TextWrapped = true
+OpenButton.Visible = false
+    OpenButton.MouseButton1Down:connect(function()
+        HacksFrame.Visible = true
+        OpenButton.Visible = false
+         AimbotButton.Visible = false
+    InfiniteYieldButton.Visible = false
+    MoonhubButton.Visible = false
+    AutoRobButton.Visible = false
+    DoomspireBrickButton.Visible = false
+    MM2GUIbutton.Visible = false
+    FrixonHubButoon.Visible = false
+    TecnhoExploitsButton.Visible = false
+    RagdollGUIButton.Visible = false
+    jailGUIButton.Visible = false
+    RevizAdminButton.Visible = false
+    KillAllButton.Visible = false
+    OPHUBbutton.Visible = false
+    end) 
+ 
+HacksFrame.Name = "HacksFrame"
+HacksFrame.Parent = Beardy13201
+HacksFrame.Active = true
+HacksFrame.BackgroundColor3 = Color3.fromRGB(39, 36, 37)
+HacksFrame.Position = UDim2.new(0.260580927, 0, 0.360655725, 0)
+HacksFrame.Size = UDim2.new(0, 411, 0, 321)
+HacksFrame.Visible = false
+HacksFrame.Draggable = true
+ 
+HacksTitle.Name = "HacksTitle"
+HacksTitle.Parent = HacksFrame
+HacksTitle.BackgroundColor3 = Color3.fromRGB(39, 36, 37)
+HacksTitle.BorderColor3 = Color3.fromRGB(29, 26, 27)
+HacksTitle.Position = UDim2.new(0.321167886, 0, 0, 0)
+HacksTitle.Size = UDim2.new(0, 279, 0, 50)
+HacksTitle.Font = Enum.Font.SciFi
+HacksTitle.Text = "The Lonely Basment By Beardy13201#3628"
+HacksTitle.TextColor3 = Color3.fromRGB(0, 0, 0)
+HacksTitle.TextScaled = true
+HacksTitle.TextSize = 14.000
+HacksTitle.TextWrapped = true
+ 
+ScrollingFrame.Parent = HacksFrame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(39, 36, 37)
+ScrollingFrame.BorderColor3 = Color3.fromRGB(29, 26, 27)
+ScrollingFrame.Position = UDim2.new(0, 0, 0.155763239, 0)
+ScrollingFrame.Size = UDim2.new(0, 132, 0, 271)
+ 
+Arsenal.Name = "Arsenal"
+Arsenal.Parent = ScrollingFrame
+Arsenal.BackgroundColor3 = Color3.fromRGB(39, 36, 37)
+Arsenal.BorderColor3 = Color3.fromRGB(29, 26, 27)
+Arsenal.Position = UDim2.new(7.4505806e-09, 0, 0, 0)
+Arsenal.Size = UDim2.new(0, 118, 0, 50)
+Arsenal.Font = Enum.Font.Sarpanch
+Arsenal.Text = "Arsenal"
+Arsenal.TextColor3 = Color3.fromRGB(0, 0, 0)
+Arsenal.TextScaled = true
+Arsenal.TextSize = 14.000
+Arsenal.TextWrapped = true
+    Arsenal.MouseButton1Down:connect(function()
+        AimbotButton.Visible = true
+        InfiniteYieldButton.Visible = false
+        MoonhubButton.Visible = false
+        AutoRobButton.Visible = false
+        DoomspireBrickButton.Visible = false
+        MM2GUIbutton.Visible = false
+        FrixonHubButoon.Visible = false
+        TecnhoExploitsButton.Visible = false
+        RagdollGUIButton.Visible = false
+        jailGUIButton.Visible = false
+        RevizAdminButton.Visible = false
+        KillAllButton.Visible = true
+        OPHUBbutton.Visible = false
+    end)
+ 
+Admins.Name = "Admins"
+Admins.Parent = ScrollingFrame
+Admins.BackgroundColor3 = Color3.fromRGB(39, 36, 37)
+Admins.BorderColor3 = Color3.fromRGB(29, 26, 27)
+Admins.Position = UDim2.new(0, 0, 0.0771009699, 0)
+Admins.Size = UDim2.new(0, 118, 0, 50)
+Admins.Font = Enum.Font.Sarpanch
+Admins.Text = "Admin"
+Admins.TextColor3 = Color3.fromRGB(0, 0, 0)
+Admins.TextScaled = true
+Admins.TextSize = 14.000
+Admins.TextWrapped = true
+Admins.MouseButton1Down:connect(function()
+        AimbotButton.Visible = false
+        InfiniteYieldButton.Visible = true
+        MoonhubButton.Visible = false
+        AutoRobButton.Visible = false
+        DoomspireBrickButton.Visible = false
+        MM2GUIbutton.Visible = false
+        FrixonHubButoon.Visible = false
+        TecnhoExploitsButton.Visible = false
+        RagdollGUIButton.Visible = false
+        jailGUIButton.Visible = false
+        RevizAdminButton.Visible = true
+        KillAllButton.Visible = false
+        OPHUBbutton.Visible = false
+    end)
+ 
+FE.Name = "FE"
+FE.Parent = ScrollingFrame
+FE.BackgroundColor3 = Color3.fromRGB(39, 36, 37)
+FE.BorderColor3 = Color3.fromRGB(29, 26, 27)
+FE.Position = UDim2.new(0, 0, 0.154982597, 0)
+FE.Size = UDim2.new(0, 118, 0, 50)
+FE.Font = Enum.Font.Sarpanch
+FE.Text = "FE"
+FE.TextColor3 = Color3.fromRGB(0, 0, 0)
+FE.TextScaled = true
+FE.TextSize = 14.000
+FE.TextWrapped = true
+FE.MouseButton1Down:connect(function()
+    AimbotButton.Visible = false
+    InfiniteYieldButton.Visible = false
+    MoonhubButton.Visible = false
+    AutoRobButton.Visible = false
+    DoomspireBrickButton.Visible = false
+    MM2GUIbutton.Visible = false
+    FrixonHubButoon.Visible = false
+    TecnhoExploitsButton.Visible = false
+    RagdollGUIButton.Visible = false
+    jailGUIButton.Visible = false
+    RevizAdminButton.Visible = false
+    KillAllButton.Visible = false
+    OPHUBbutton.Visible = true
+end)
+ 
+Others.Name = "Others"
+Others.Parent = ScrollingFrame
+Others.BackgroundColor3 = Color3.fromRGB(39, 36, 37)
+Others.BorderColor3 = Color3.fromRGB(29, 26, 27)
+Others.Position = UDim2.new(0, 0, 0.310745835, 0)
+Others.Size = UDim2.new(0, 118, 0, 50)
+Others.Font = Enum.Font.Sarpanch
+Others.Text = "Ragdoll"
+Others.TextColor3 = Color3.fromRGB(0, 0, 0)
+Others.TextScaled = true
+Others.TextSize = 14.000
+Others.TextWrapped = true
+Others.MouseButton1Down:connect(function()
+    AimbotButton.Visible = false
+    InfiniteYieldButton.Visible = false
+    MoonhubButton.Visible = false
+    AutoRobButton.Visible = false
+    DoomspireBrickButton.Visible = false
+    MM2GUIbutton.Visible = false
+    FrixonHubButoon.Visible = false
+    TecnhoExploitsButton.Visible = false
+    RagdollGUIButton.Visible = true
+    jailGUIButton.Visible = false
+    RevizAdminButton.Visible = false
+    KillAllButton.Visible = false
+    OPHUBbutton.Visible = false
+end)
+ 
+Jailbreak.Name = "Jailbreak"
+Jailbreak.Parent = ScrollingFrame
+Jailbreak.BackgroundColor3 = Color3.fromRGB(39, 36, 37)
+Jailbreak.BorderColor3 = Color3.fromRGB(29, 26, 27)
+Jailbreak.Position = UDim2.new(0, 0, 0.232864231, 0)
+Jailbreak.Size = UDim2.new(0, 118, 0, 50)
+Jailbreak.Font = Enum.Font.Sarpanch
+Jailbreak.Text = "Jailbreak"
+Jailbreak.TextColor3 = Color3.fromRGB(0, 0, 0)
+Jailbreak.TextScaled = true
+Jailbreak.TextSize = 14.000
+Jailbreak.TextWrapped = true
+Jailbreak.MouseButton1Down:connect(function()
+    AimbotButton.Visible = false
+    InfiniteYieldButton.Visible = false
+    MoonhubButton.Visible = false
+    AutoRobButton.Visible = true
+    DoomspireBrickButton.Visible = false
+    MM2GUIbutton.Visible = false
+    FrixonHubButoon.Visible = false
+    TecnhoExploitsButton.Visible = false
+    RagdollGUIButton.Visible = false
+    jailGUIButton.Visible = true
+    RevizAdminButton.Visible = false
+    KillAllButton.Visible = false
+    OPHUBbutton.Visible = false
+end)
+ 
+Others_2.Name = "Others"
+Others_2.Parent = ScrollingFrame
+Others_2.BackgroundColor3 = Color3.fromRGB(39, 36, 37)
+Others_2.BorderColor3 = Color3.fromRGB(29, 26, 27)
+Others_2.Position = UDim2.new(0, 0, 0.38862747, 0)
+Others_2.Size = UDim2.new(0, 118, 0, 50)
+Others_2.Font = Enum.Font.Sarpanch
+Others_2.Text = "Others"
+Others_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Others_2.TextScaled = true
+Others_2.TextSize = 14.000
+Others_2.TextWrapped = true
+Others_2.MouseButton1Down:connect(function()
+    AimbotButton.Visible = false
+    InfiniteYieldButton.Visible = true
+    MoonhubButton.Visible = true
+    AutoRobButton.Visible = false
+    DoomspireBrickButton.Visible = false
+    MM2GUIbutton.Visible = true
+    FrixonHubButoon.Visible = true
+    TecnhoExploitsButton.Visible = true
+    RagdollGUIButton.Visible = false
+    jailGUIButton.Visible = false
+    RevizAdminButton.Visible = false
+    KillAllButton.Visible = false
+    OPHUBbutton.Visible = false
+end)
+ 
+LOGOT.Name = "LOGOT"
+LOGOT.Parent = HacksFrame
+LOGOT.BackgroundColor3 = Color3.fromRGB(39, 36, 37)
+LOGOT.BackgroundTransparency = 1.000
+LOGOT.BorderColor3 = Color3.fromRGB(29, 26, 27)
+LOGOT.BorderSizePixel = 0
+LOGOT.Position = UDim2.new(0.0170316305, 0, 0.0342679136, 0)
+LOGOT.Size = UDim2.new(0, 34, 0, 39)
+LOGOT.Font = Enum.Font.LuckiestGuy
+LOGOT.Text = "T"
+LOGOT.TextColor3 = Color3.fromRGB(255, 255, 255)
+LOGOT.TextScaled = true
+LOGOT.TextSize = 14.000
+LOGOT.TextWrapped = true
+    LOGOT.MouseButton1Down:connect(function()
+        MainFrame.Visible = false
+        OpenButton.Visible = true
+    end)
+ 
+LOGOL.Name = "LOGOL"
+LOGOL.Parent = HacksFrame
+LOGOL.BackgroundColor3 = Color3.fromRGB(39, 36, 37)
+LOGOL.BackgroundTransparency = 1.000
+LOGOL.BorderColor3 = Color3.fromRGB(29, 26, 27)
+LOGOL.BorderSizePixel = 0
+LOGOL.Position = UDim2.new(0.0997566879, 0, 0.0342679136, 0)
+LOGOL.Size = UDim2.new(0, 36, 0, 42)
+LOGOL.Font = Enum.Font.LuckiestGuy
+LOGOL.Text = "L"
+LOGOL.TextColor3 = Color3.fromRGB(0, 89, 255)
+LOGOL.TextScaled = true
+LOGOL.TextSize = 14.000
+LOGOL.TextWrapped = true
+ 
+LOGOB.Name = "LOGOB"
+LOGOB.Parent = HacksFrame
+LOGOB.BackgroundColor3 = Color3.fromRGB(39, 36, 37)
+LOGOB.BackgroundTransparency = 1.000
+LOGOB.BorderColor3 = Color3.fromRGB(29, 26, 27)
+LOGOB.BorderSizePixel = 0
+LOGOB.Position = UDim2.new(0.204379559, 0, 0.0342679098, 0)
+LOGOB.Size = UDim2.new(0, 32, 0, 41)
+LOGOB.Font = Enum.Font.LuckiestGuy
+LOGOB.Text = "b"
+LOGOB.TextColor3 = Color3.fromRGB(255, 255, 255)
+LOGOB.TextScaled = true
+LOGOB.TextSize = 14.000
+LOGOB.TextWrapped = true
+ 
+ActualHacks.Name = "ActualHacks"
+ActualHacks.Parent = HacksFrame
+ActualHacks.BackgroundColor3 = Color3.fromRGB(39, 36, 37)
+ActualHacks.BorderColor3 = Color3.fromRGB(29, 26, 27)
+ActualHacks.Position = UDim2.new(0.321167886, 0, 0.155763239, 0)
+ActualHacks.Size = UDim2.new(0, 279, 0, 271)
+ActualHacks.Visible = true
+ 
+AimbotButton.Name = "AimbotButton"
+AimbotButton.Parent = ActualHacks
+AimbotButton.BackgroundColor3 = Color3.fromRGB(38, 35, 36)
+AimbotButton.BorderColor3 = Color3.fromRGB(29, 26, 27)
+AimbotButton.Size = UDim2.new(0, 137, 0, 50)
+AimbotButton.Font = Enum.Font.SciFi
+AimbotButton.Text = "Aimbot"
+AimbotButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+AimbotButton.TextScaled = true
+AimbotButton.TextSize = 14.000
+AimbotButton.TextWrapped = true
+AimbotButton.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/qatpp8G4", true))() 
+ 
+end) 
+ 
+ 
+KillAllButton.Name = "KillAllButton"
+KillAllButton.Parent = ActualHacks
+KillAllButton.BackgroundColor3 = Color3.fromRGB(38, 35, 36)
+KillAllButton.BorderColor3 = Color3.fromRGB(29, 26, 27)
+KillAllButton.Position = UDim2.new(0.491039425, 0, 0, 0)
+KillAllButton.Size = UDim2.new(0, 142, 0, 50)
+KillAllButton.Font = Enum.Font.SciFi
+KillAllButton.Text = "Kill All"
+KillAllButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+KillAllButton.TextScaled = true
+KillAllButton.TextSize = 14.000
+KillAllButton.TextWrapped = true
+KillAllButton.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/gZuSP26F", true))() 
+ 
+end) 
+ 
+RevizAdminButton.Name = "RevizAdminButton"
+RevizAdminButton.Parent = ActualHacks
+RevizAdminButton.BackgroundColor3 = Color3.fromRGB(38, 35, 36)
+RevizAdminButton.BorderColor3 = Color3.fromRGB(29, 26, 27)
+RevizAdminButton.Size = UDim2.new(0, 137, 0, 50)
+RevizAdminButton.Font = Enum.Font.SciFi
+RevizAdminButton.Text = "Reviz Admin"
+RevizAdminButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+RevizAdminButton.TextScaled = true
+RevizAdminButton.TextSize = 14.000
+RevizAdminButton.TextWrapped = true
+RevizAdminButton.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/afKnz4F2", true))() 
+ 
+end) 
+ 
+ 
+ 
+InfiniteYieldButton.Name = "InfiniteYieldButton"
+InfiniteYieldButton.Parent = ActualHacks
+InfiniteYieldButton.BackgroundColor3 = Color3.fromRGB(38, 35, 36)
+InfiniteYieldButton.BorderColor3 = Color3.fromRGB(29, 26, 27)
+InfiniteYieldButton.Position = UDim2.new(0.491039425, 0, 0, 0)
+InfiniteYieldButton.Size = UDim2.new(0, 142, 0, 50)
+InfiniteYieldButton.Font = Enum.Font.SciFi
+InfiniteYieldButton.Text = "Infinite Yield"
+InfiniteYieldButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteYieldButton.TextScaled = true
+InfiniteYieldButton.TextSize = 14.000
+InfiniteYieldButton.TextWrapped = true
+InfiniteYieldButton.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/MjBzRjmT", true))() 
+ 
+end) 
+ 
+MoonhubButton.Name = "MoonhubButton"
+MoonhubButton.Parent = ActualHacks
+MoonhubButton.BackgroundColor3 = Color3.fromRGB(38, 35, 36)
+MoonhubButton.BorderColor3 = Color3.fromRGB(29, 26, 27)
+MoonhubButton.Position = UDim2.new(0.491039425, 0, 0.184501842, 0)
+MoonhubButton.Size = UDim2.new(0, 142, 0, 50)
+MoonhubButton.Font = Enum.Font.SciFi
+MoonhubButton.Text = "MoonHub"
+MoonhubButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+MoonhubButton.TextScaled = true
+MoonhubButton.TextSize = 14.000
+MoonhubButton.TextWrapped = true
+MoonhubButton.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/h69zwZ1v", true))() 
+ 
+end) 
+ 
+OPHUBbutton.Name = "OPHUBbutton"
+OPHUBbutton.Parent = ActualHacks
+OPHUBbutton.BackgroundColor3 = Color3.fromRGB(38, 35, 36)
+OPHUBbutton.BorderColor3 = Color3.fromRGB(29, 26, 27)
+OPHUBbutton.Size = UDim2.new(0, 137, 0, 50)
+OPHUBbutton.Font = Enum.Font.SciFi
+OPHUBbutton.Text = "OP HUB"
+OPHUBbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
+OPHUBbutton.TextScaled = true
+OPHUBbutton.TextSize = 14.000
+OPHUBbutton.TextWrapped = true
+OPHUBbutton.Visible = false
+OPHUBbutton.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/HJcPU5Kj", true))() 
+ 
+end) 
+ 
+AutoRobButton.Name = "AutoRobButton"
+AutoRobButton.Parent = ActualHacks
+AutoRobButton.BackgroundColor3 = Color3.fromRGB(38, 35, 36)
+AutoRobButton.BorderColor3 = Color3.fromRGB(29, 26, 27)
+AutoRobButton.Size = UDim2.new(0, 137, 0, 50)
+AutoRobButton.Font = Enum.Font.SciFi
+AutoRobButton.Text = "AutoRob"
+AutoRobButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutoRobButton.TextScaled = true
+AutoRobButton.TextSize = 14.000
+AutoRobButton.TextWrapped = true
+AutoRobButton.MouseButton1Down:connect(function()
+    loadstring(game:GetObjects("rbxassetid://1461971147")[1].Source)()
+ 
+    end)
+ 
+jailGUIButton.Name = "jailGUIButton"
+jailGUIButton.Parent = ActualHacks
+jailGUIButton.BackgroundColor3 = Color3.fromRGB(38, 35, 36)
+jailGUIButton.BorderColor3 = Color3.fromRGB(29, 26, 27)
+jailGUIButton.Position = UDim2.new(0.491039425, 0, 0, 0)
+jailGUIButton.Size = UDim2.new(0, 142, 0, 50)
+jailGUIButton.Font = Enum.Font.SciFi
+jailGUIButton.Text = "GUI"
+jailGUIButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+jailGUIButton.TextScaled = true
+jailGUIButton.TextSize = 14.000
+jailGUIButton.TextWrapped = true
+jailGUIButton.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/Y3JNxf7V", true))() 
+ 
+end) 
+ 
+RagdollGUIButton.Name = "RagdollGUIButton"
+RagdollGUIButton.Parent = ActualHacks
+RagdollGUIButton.BackgroundColor3 = Color3.fromRGB(38, 35, 36)
+RagdollGUIButton.BorderColor3 = Color3.fromRGB(29, 26, 27)
+RagdollGUIButton.Size = UDim2.new(0, 137, 0, 50)
+RagdollGUIButton.Font = Enum.Font.SciFi
+RagdollGUIButton.Text = "GUI"
+RagdollGUIButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+RagdollGUIButton.TextScaled = true
+RagdollGUIButton.TextSize = 14.000
+RagdollGUIButton.TextWrapped = true
+RagdollGUIButton.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Scripts/master/Vynixius%20Ragdoll%20Engine"))()
+ 
+end) 
+ 
+MM2GUIbutton.Name = "MM2GUIbutton"
+MM2GUIbutton.Parent = ActualHacks
+MM2GUIbutton.BackgroundColor3 = Color3.fromRGB(38, 35, 36)
+MM2GUIbutton.BorderColor3 = Color3.fromRGB(29, 26, 27)
+MM2GUIbutton.Size = UDim2.new(0, 137, 0, 50)
+MM2GUIbutton.Font = Enum.Font.SciFi
+MM2GUIbutton.Text = "MM2 GUI"
+MM2GUIbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
+MM2GUIbutton.TextScaled = true
+MM2GUIbutton.TextSize = 14.000
+MM2GUIbutton.TextWrapped = true
+MM2GUIbutton.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/cpgi3HKZ", true))() 
+ 
+end) 
+ 
+DoomspireBrickButton.Name = "DoomspireBrickButton"
+DoomspireBrickButton.Parent = ActualHacks
+DoomspireBrickButton.BackgroundColor3 = Color3.fromRGB(38, 35, 36)
+DoomspireBrickButton.BorderColor3 = Color3.fromRGB(29, 26, 27)
+DoomspireBrickButton.Position = UDim2.new(0.491039425, 0, 0, 0)
+DoomspireBrickButton.Size = UDim2.new(0, 142, 0, 50)
+DoomspireBrickButton.Font = Enum.Font.SciFi
+DoomspireBrickButton.Text = "Doomspire GUI"
+DoomspireBrickButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+DoomspireBrickButton.TextScaled = true
+DoomspireBrickButton.TextSize = 14.000
+DoomspireBrickButton.TextWrapped = true
+DoomspireBrickButton.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MattLawz/1nferiousCheats/master/DoomspireScript.lua", true))()
+ 
+end) 
+ 
+TecnhoExploitsButton.Name = "TecnhoExploitsButton"
+TecnhoExploitsButton.Parent = ActualHacks
+TecnhoExploitsButton.BackgroundColor3 = Color3.fromRGB(38, 35, 36)
+TecnhoExploitsButton.BorderColor3 = Color3.fromRGB(29, 26, 27)
+TecnhoExploitsButton.Position = UDim2.new(0.491039425, 0, 0.184501842, 0)
+TecnhoExploitsButton.Size = UDim2.new(0, 142, 0, 50)
+TecnhoExploitsButton.Font = Enum.Font.SciFi
+TecnhoExploitsButton.Text = "Techno Exploits"
+TecnhoExploitsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TecnhoExploitsButton.TextScaled = true
+TecnhoExploitsButton.TextSize = 14.000
+TecnhoExploitsButton.TextWrapped = true
+TecnhoExploitsButton.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/uQySzeLv", true))() 
+ 
+end) 
+ 
+FrixonHubButoon.Name = "FrixonHubButoon"
+FrixonHubButoon.Parent = ActualHacks
+FrixonHubButoon.BackgroundColor3 = Color3.fromRGB(38, 35, 36)
+FrixonHubButoon.BorderColor3 = Color3.fromRGB(29, 26, 27)
+FrixonHubButoon.Position = UDim2.new(0, 0, 0.184501842, 0)
+FrixonHubButoon.Size = UDim2.new(0, 137, 0, 50)
+FrixonHubButoon.Font = Enum.Font.SciFi
+FrixonHubButoon.Text = "Frixon HUB"
+FrixonHubButoon.TextColor3 = Color3.fromRGB(0, 0, 0)
+FrixonHubButoon.TextScaled = true
+FrixonHubButoon.TextSize = 14.000
+FrixonHubButoon.TextWrapped = true
+FrixonHubButoon.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet('https://gist.githubusercontent.com/RedoGaming/2e5943498c487ea97df0d436dd35c234/raw/f0445b1afcd9193bfb94bc75dda7318310a22ad2/Rageflake!%2520New%2520OP%2520Roblox%2520Exploit%2520Hub!'))() 
+ 
+end) 
